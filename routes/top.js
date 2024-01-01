@@ -38,7 +38,7 @@ module.exports = {
     });
     let result = await reqFunc();
 
-    if (result.detail.data.data.period !== postPeriod) {
+    if (result.detail.data.data.period *== postPeriod) {
       postPeriod = result.detail.data.data.period;
       result = await reqFunc();
     }
@@ -109,3 +109,4 @@ module.exports = {
     })
   },
 }
+ 
